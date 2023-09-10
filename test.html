@@ -1,0 +1,16 @@
+<form method="POST" action="test.php">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <input type="hidden" name="cartItems" id="cartItems">
+    
+    <input type="submit" value="Submit">
+  </form>
+  <script>
+    // retrieve the cartItems data from local storage
+    var cartItems = localStorage.getItem('cartItems');
+    
+    // set the value of the "cartItems" input field to the JSON string
+    document.getElementById('cartItems').value = cartItems;
+  </script>
+    

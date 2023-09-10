@@ -1,0 +1,141 @@
+/* Set default font styles and box model */
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the sign-up box */
+  .signup-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .signup-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-box h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-box label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .signup-box input[type="text"],
+  .signup-box input[type="email"],
+  .signup-box input[type="number"],
+  .signup-box input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .signup-box input[type="submit"] {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  
+  .signup-box input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .signup-box p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .signup-box p a {
+    color: #4caf50;
+  }
+  
+  .signup-box p a:hover {
+    text-decoration: underline;
+  }
+  
+  .para-2 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .para-2 a {
+    color: #4caf50;
+  }
+  
+  .para-2 a:hover {
+    text-decoration: underline;
+  }
+  .login-box {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-box h1 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .login-box label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    text-align: center;
+    align-items: center;
+    background-color: #a2f161;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    text-align: center;
+    background-color: #666;
+    align-items: center;
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function validateForm() {
+        var password1 = document.getElementById("pass").value;
+        var password2 = document.getElementById("pass2").value;
+        if (password1 != password2) {
+          alert("Passwords do not match!");
+          return false;
+        }
+      }
+      document
+        .getElementById("signup-form")
+        .addEventListener("submit", validateForm);
+    </script>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="signup.php" method="post" onsubmit="return validateForm();">
+        <label>Name</label>
+        <input
+          type="text"
+          placeholder=""
+          id="name"
+          name="name"
+          style="text-transform: none"
+          pattern="[A-Za-z]+[ A-Za-z]"
+          title="Name should only contain alphabets"
+          required
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder=""
+          id="email"
+          name="email"
+          style="text-transform: lowercase"
+          required
+        />
+        <label>Mobile No. (+91-)</label>
+        <input
+          type="tel"
+          placeholder=""
+          id="mobile"
+          name="mobile"
+          pattern="[0-9]{10}"
+          title="Mobile number should be exactly 10 digits"
+          required
+        />
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder=""
+          id="pass"
+          name="pass"
+          style="text-transform: none"
+          required
+        />
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          placeholder=""
+          id="pass2"
+          name="pass2"
+          style="text-transform: none"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+  </body>
+</html>

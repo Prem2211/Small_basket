@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN | Add Product</title>
+</head>
+<body>
+	<h2>Add Product</h2>
+	<form action="insert_product.php" method="POST">
+		<label for="name">Product Name:</label><br>
+		<input type="text" id="name" name="name"><br>
+		<label for="description">Product Category:</label><br>
+		<select id="description" name="description">
+			<option value="fruit">FRUIT</option>
+			<option value="vege">VEGETABLE</option>
+			<option value="exotic">EXOTIC</option>
+			<option value="dairy">DAIRY</option>
+		  </select><br>
+		<label for="price">Product Price:</label><br>
+		<input type="number" id="price" name="price"><br>
+		<label for="image">Product Image Link:</label><br>
+		<input type="text" id="image" name="image"><br><br>
+		<input type="submit" value="Add Product">
+	</form>
+
+    <h2>IMAGE LINKS</h2>
+    <h4> FRUIT -  img/fruit/</h4>
+    <h4> VEGETABLE -  img/vege/</h4>
+	<h4> EXOTICS -  img/exotics/</h4>
+    <h4> DAIRY -  img/dairy/</h4>
+</body>
+</html>

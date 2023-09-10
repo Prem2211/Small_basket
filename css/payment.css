@@ -1,0 +1,71 @@
+
+.payment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.head-container{
+    width: 600px;
+    background-color: rgb(255, 137, 34);
+}
+.head-container img {
+    height: 70px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+
+/* Style for the heading */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Style for the subheading */
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Style for the icon container */
+.icon-container {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-color: black;
+    flex-direction: column;
+      
+}
+
+/* Style for the icons */
+.icon {
+    max-width: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 32px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+}
+
+/* Style for the icon image */
+.icon img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Style for the icon label */
+.icon label {
+    font-size: 1.2rem;
+    text-align: center;
+}

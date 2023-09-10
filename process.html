@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="shortcut icon" href="paypal.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylec.css" charset="utf-8">
+  </head>
+  <body>
+    <div id="header">	
+
+      SHOEROOM                                             
+    
+</div>
+      
+    
+
+    <div class="paypal">
+
+      <div class="paypal__header">
+        <div class="paypal__logo-wrapper">
+          <img src="https://i.ibb.co/DrvmW5y/paypal.png" alt="Paypal" class="paypal__logo">
+        </div>
+
+        <div class="paypal__header-info">
+          <span class="paypal__date">25.04.2016</span>
+          <span class="paypal__ref">0f-113</span>
+        </div>
+      </div>
+
+      <div class="paypal__subheader-wrapper">
+        <div class="paypal__subheader">
+          <h1 class="paypal__username"> Hi, Customer</h1>
+          <span class="paypal__help-text">
+          Clicking on the "Pay On Delivery" option will Confirm your order and redirect you to the Main Page</span>
+        </div>
+      </div>
+
+      <div class="paypal__cart">
+        <h2 class="paypal__cart-title">Enter your personal details for delivery of the purchased items<br></h2>
+
+        <ul class="paypal__cart-list">
+          <li>
+            <form>
+              <label for="fname">Enter Phone No:</label>
+              <input type="text" id="phoneno." name="phoneno." required>
+              <label for="lname">Enter address:</label>
+              <input type="text" id="address" name="address" required> &nbsp;
+              <label for="lname">Enter Email ID:</label>
+              <input type="text" id="emailid" name="emailid" required><br><br>
+            
+           </form></li>
+           <li>You will recieve an order verification on your given Email ID</li>
+        
+        
+        </ul>
+      </div>
+
+      <div class="paypal__footer">
+        <li>Pay With COD or Scan the QR CODE at The Time Of Delivery </li>
+        <img src="scanqr.jpeg" height="150px" width="150px" alt="Paypal Barcode" class="paypal__barcode" >
+      </div>
+    </div>
+
+    <div class="container">
+
+
+        <a href="index.html" class="button">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text">Pay On Delivery</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      
+      </div>
+
+  </body>
+  <footer class="flex-all-center">
+
+    
+    <p class="text-center">Copyright &copy; Shoeroom.com </p>
+</footer>
+</html>
+<script>
+  document.getElementsByClassName("paypal__item-name1").innerHTML=localStorage.getItem(ProductName); 
+</script>
+
+
